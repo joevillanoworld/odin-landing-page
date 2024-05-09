@@ -1,54 +1,77 @@
-body{
+body {
     background-color: #1f2937;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-
-.header{
-    display:flex;
-    height: 50px;
-    justify-content:space-evenly;
-    align-items: center;
-    background-color: aliceblue;
-    gap: 50px;
-}
-
-.links{
-    display: flex;
-    gap: 20px;
-}
-
-.link{
-    font-size: smaller;
-}
-
-.header-logo{
-    font-size: larger;
-    font-weight: bolder;
-}
-
-.block-one{
-    display: flex;
-    height: 300px;
-    background-color: aliceblue;
-}
-
-.text{
-    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    padding: 10px;
-    margin: 50px;
-
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-.image{
-    background-color: blueviolet;
+.header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 50px;
+}
+
+#header-logo {
+    color: #f9faf8;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#header-links {
+    color: #e5e7eb;
+    font-size: 18px;
+    display: flex;
+    gap: 10px;
+}
+
+.block-one {
+    display: flex;
+    justify-content: space-between;
+    gap: 75px;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    flex-grow: 0;
+}
+
+#hero-title {
+    font-weight:900;
+    font-size: 48px;
+    color: #f9faf8;
+    margin: 0px;
+}
+
+#hero-body {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+#hero-button {
+    background-color: #3882f6;
+    color:#f9faf8;
+    border-radius: 10px;
+    border-color:#3882f6;
+    border-style: none;
+    padding: 5px;
+    width: 80px;
+    height: 30px;
+}
+
+#image-placeholder {
+    background-color: gray;
+    flex-basis: 50%;
+    flex-grow: 0;
+    display: flex;
     align-items: center;
-    padding: 100px;
-    margin: 50px;
-    width: 50%;
+    justify-content: center;
+}
+
+#image-placeholder * {
+    color: white;
 }
